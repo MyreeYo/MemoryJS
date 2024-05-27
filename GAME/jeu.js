@@ -100,5 +100,5 @@ document.addEventListener("keydown", (event) => {
     initializeGame();
   }
 });
-// commentaire nul
+
 initializeGame();
