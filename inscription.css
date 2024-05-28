@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-.signup-container {
+.auth-container {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -28,13 +28,23 @@ form {
     flex-direction: column;
 }
 
+.form-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
 label {
     margin-bottom: 5px;
     color: #34495e;
 }
 
 input {
-    margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -50,6 +60,7 @@ button {
     font-size: 1.2em;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 15px;
 }
 
 button:hover {
@@ -57,9 +68,8 @@ button:hover {
 }
 
 .password-strength {
-    margin: 0 0 15px 0;
+    margin: 5px 0 0 0;
     font-size: 0.9em;
-    color: #e74c3c;
 }
 
 .password-strength.weak {
@@ -73,3 +83,18 @@ button:hover {
 .password-strength.strong {
     color: #2ecc71;
 }
+
+#toggle-auth-mode {
+    background: none;
+    border: none;
+    color: #1abc9c;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+#toggle-auth-mode:hover {
+    color: #16a085;
+}
+
