@@ -55,3 +55,21 @@ button {
 button:hover {
     background-color: #16a085;
 }
+
+.password-strength {
+    margin: 0 0 15px 0;
+    font-size: 0.9em;
+    color: #e74c3c;
+}
+
+.password-strength.weak {
+    color: #e74c3c;
+}
+
+.password-strength.medium {
+    color: #f1c40f;
+}
+
+.password-strength.strong {
+    color: #2ecc71;
+}
