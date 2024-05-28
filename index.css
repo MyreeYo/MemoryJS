@@ -1,14 +1,6 @@
 body {
     /* Ajout de Nunito */
     font-family: 'Nunito', sans-serif; 
-    /* Ajout de l'image de fond + linear gradient */
-    background-image: linear-gradient(to bottom, rgba(40, 21, 133, 0.5), rgba(168, 29, 29, 0.5)),
-    url("https://static.zerochan.net/Jujutsu.Kaisen.full.3244200.png");
-    /* Gère la position de l'image de fond */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
     /* Gère la position générale du body */
     display: flex;
     flex-direction: column;
@@ -16,23 +8,59 @@ body {
     margin: 0;
     padding: 20px;
     color: #333;
+    position: relative;
+    z-index: 0;
 }
 
+body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://zupimages.net/up/24/22/knm9.png") center/cover no-repeat;
+    opacity: 0.5; /* Ajuste la transparence de l'image */
+    z-index: -1; /* Place l'image derrière le contenu */
+}
+
+body:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,  rgba(215, 160, 62, 0.5),  rgba(69, 176, 210, 0.5));
+    z-index: -1; /* Place le gradient derrière le contenu mais devant l'image */
+}
+/* Conteneur du titre 1 et de l'image à droite */
+.header-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Titre 1 */
 h1 {
     font-size: 3.5em;
     text-decoration: underline;
     text-shadow: 2px 2px #F2ECF8;
     color: #27254C;
-    margin-bottom: 10px;
-    background-color: rgb(155, 138, 180, 0.5); /* Fond transparent */
-    width: 100%;
-    display: block; 
-    text-align: center; 
+    margin-right: 10px; /* Met un entre le titre et l'image */
+}
+
+/* Image à droite */
+.header-image {
+    width: 150px; /* Modifie la taille de l'image */
+    height: auto;
+    border: none;
 }
 
 p {
     text-align: center;
     font-size: 1.2em;
+    text-decoration: underline;
     line-height: 1.6;
     max-width: 800px;
     margin-bottom: 20px;
@@ -41,46 +69,46 @@ p {
 
 .welcome {
     font-style: italic;
-    color: #F2ECF8;
+    font-size: 1em;
+    color: #000000;
 }
 
 h2 {
     font-size: 2em;
-    color: #e74c3c;
+    color:  #222D55;
+    text-decoration: underline;
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.5);
     margin: 20px 0;
-    
+        
 }
+
 
 .rules {
     display: block;
-    text-align: left;
-    font-size: 1em;
-    color: #34495e;
-    
+    text-align: center;
+    font-size: 1.5em;
+    color: #000000;
+        
 }
 
 img {
-    width: 80%;
+    width: 60%;
     height: auto;
-    border: 2px solid #2c3e50;
+    border: 2px solid #222D55;
     border-radius: 10px;
     margin: 20px 0;
 }
 
 .rulesEnd {
     display: block;
-    text-align: left;
-    font-size: 1em;
-    color: #34495e;
+    text-align: center;
+    font-size: 1.5em;
+    color: #000000;
     margin-top: 20px;
 }
 
-b {
-    color: #e74c3c;
-}
-
 nav {
-    background-color: #45B0D2;
+    background-color: #222D55;
     padding: 10px 0;
     box-shadow: 0 4px 6px rgba(1, 1, 1, 0.1);
     width: 100%;
@@ -121,7 +149,7 @@ body {
     width: 8px;
 }
 ::-webkit-scrollbar-thumb {
-    background: #45B0D2;
+    background: #222D55;
   border-radius: 5px;
 }
 ::-webkit-scrollbar-track {

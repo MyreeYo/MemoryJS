@@ -1,33 +1,110 @@
 body {
+    /* Ajout de Nunito */
+    font-family: 'Nunito', sans-serif; 
+    /* Gère la position générale du body */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
     margin: 0;
-    background-color: #f3f3f3;
-    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    color: #333;
+    position: relative;
+    z-index: 0;
 }
 
-h1 {
-    font-size: 2.5em;
-    color: #2c3e50;
+body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://zupimages.net/up/24/22/knm9.png") center/cover no-repeat;
+    opacity: 0.5; /* Ajuste la transparence de l'image */
+    z-index: -1; /* Place l'image derrière le contenu */
+}
+
+body:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,  rgba(215, 160, 62, 0.5),  rgba(69, 176, 210, 0.5));
+    z-index: -1; /* Place le gradient derrière le contenu mais devant l'image */
+}
+/* Conteneur du titre 1 et de l'image à droite */
+.header-container {
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
+}
+
+/* Titre 1 */
+h1 {
+    font-size: 3.5em;
+    text-decoration: underline;
+    text-shadow: 2px 2px #F2ECF8;
+    color: #27254C;
+    margin-right: 10px; /* Met un entre le titre et l'image */
+}
+
+/* Image à droite */
+.header-image {
+    width: 150px; /* Modifie la taille de l'image */
+    height: auto;
+    border: none;
 }
 
 p {
     text-align: center;
     font-size: 1.2em;
+    text-decoration: underline;
     line-height: 1.6;
     max-width: 800px;
     margin-bottom: 20px;
+    
 }
 
-.bienvenue {
+.welcome {
     font-style: italic;
-    color: #16a085;
+    font-size: 1em;
+    color: #000000;
+}
+nav {
+    background-color: #222D55;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(1, 1, 1, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}
 .memory-game {
     width: 640px;
     height: 640px;
@@ -37,8 +114,8 @@ p {
 }
 
 .memory-card {
-    width: calc(25% - 10px);
-    height: calc(25% - 10px);
+    width: calc(25% - 20px);
+    height: calc(25% - 20px);
     margin: 5px;
     position: relative;
     transform: scale(1);

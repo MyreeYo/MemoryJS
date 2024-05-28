@@ -1,0 +1,138 @@
+body {
+    /* Ajout de Nunito */
+    font-family: 'Nunito', sans-serif; 
+    /* Gère la position générale du body */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    position: relative;
+    z-index: 0;
+}
+
+body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://zupimages.net/up/24/22/knm9.png") center/cover no-repeat;
+    opacity: 0.5; /* Ajuste la transparence de l'image */
+    z-index: -1; /* Place l'image derrière le contenu */
+}
+
+body:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,  rgba(215, 160, 62, 0.5),  rgba(69, 176, 210, 0.5));
+    z-index: -1; /* Place le gradient derrière le contenu mais devant l'image */
+}
+  
+  .profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-image-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #preview-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Ajout de cette règle pour centrer l'image */
+  }
+  
+  
+  .profile-details {
+    margin-bottom: 20px;
+  }
+  
+  .profile-details label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .profile-details input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  nav {
+    background-color: #222D55;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(1, 1, 1, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}

@@ -1,20 +1,20 @@
 const cardsArray = [
-  { name: "card1", img: "https://zupimages.net/up/24/22/yqrt.png" },
-  { name: "card2", img: "https://zupimages.net/up/24/22/wch0.png" },
-  { name: "card3", img: "https://zupimages.net/up/24/22/gxjv.png" },
-  { name: "card4", img: "https://zupimages.net/up/24/22/tzbn.png" },
-  { name: "card5", img: "https://zupimages.net/up/24/22/g23k.png" },
-  { name: "card6", img: "https://zupimages.net/up/24/22/yazx.png" },
-  { name: "card7", img: "https://zupimages.net/up/24/22/k8xn.png" },
-  { name: "card8", img: "https://zupimages.net/up/24/22/y32w.png" },
-  { name: "card1", img: "https://zupimages.net/up/24/22/yqrt.png" },
-  { name: "card2", img: "https://zupimages.net/up/24/22/wch0.png" },
-  { name: "card3", img: "https://zupimages.net/up/24/22/gxjv.png" },
-  { name: "card4", img: "https://zupimages.net/up/24/22/tzbn.png" },
-  { name: "card5", img: "https://zupimages.net/up/24/22/g23k.png" },
-  { name: "card6", img: "https://zupimages.net/up/24/22/yazx.png" },
-  { name: "card7", img: "https://zupimages.net/up/24/22/k8xn.png" },
-  { name: "card8", img: "https://zupimages.net/up/24/22/y32w.png" },
+  { name: "card1", img: "https://zupimages.net/up/24/22/opkz.png" },
+  { name: "card2", img: "https://zupimages.net/up/24/22/0udz.png" },
+  { name: "card3", img: "https://zupimages.net/up/24/22/hxu5.png" },
+  { name: "card4", img: "https://zupimages.net/up/24/22/17tv.png" },
+  { name: "card5", img: "https://zupimages.net/up/24/22/01rz.png" },
+  { name: "card6", img: "https://zupimages.net/up/24/22/ibwp.png" },
+  { name: "card7", img: "https://zupimages.net/up/24/22/jssz.png" },
+  { name: "card8", img: "https://zupimages.net/up/24/22/afon.png" },
+  { name: "card1", img: "https://zupimages.net/up/24/22/opkz.png" },
+  { name: "card2", img: "https://zupimages.net/up/24/22/0udz.png" },
+  { name: "card3", img: "https://zupimages.net/up/24/22/hxu5.png" },
+  { name: "card4", img: "https://zupimages.net/up/24/22/17tv.png" },
+  { name: "card5", img: "https://zupimages.net/up/24/22/01rz.png" },
+  { name: "card6", img: "https://zupimages.net/up/24/22/ibwp.png" },
+  { name: "card7", img: "https://zupimages.net/up/24/22/jssz.png" },
+  { name: "card8", img: "https://zupimages.net/up/24/22/afon.png" },
 ];
 
 const game = document.querySelector(".memory-game");
@@ -30,7 +30,7 @@ const createCard = (card) => {
 
   const backFace = document.createElement("img");
   backFace.classList.add("back-face");
-  backFace.src = "https://zupimages.net/up/24/22/pohx.png";
+  backFace.src = "https://zupimages.net/up/24/22/0o05.png";
 
   cardElement.appendChild(frontFace);
   cardElement.appendChild(backFace);
