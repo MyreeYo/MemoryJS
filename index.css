@@ -141,9 +141,6 @@ nav ul li a:hover {
     color: #1abc9c;
 }
 
-body {
-    padding-top: 60px; /* Ajuste cette valeur en fonction de la hauteur de ta barre de navigation */
-}
 /* Modifie la scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
