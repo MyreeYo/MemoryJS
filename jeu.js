@@ -18,6 +18,7 @@ const cardsArray = [
 ];
 
 const game = document.querySelector(".memory-game");
+const pairSound = document.getElementById("pair-sound");
 
 const createCard = (card) => {
   const cardElement = document.createElement("div");
@@ -40,7 +41,7 @@ const createCard = (card) => {
 
 const initializeGame = () => {
   game.innerHTML = "";
-  const shuffledCards = cardsArray.sort(() => 0.5 - Math.random());
+  const shuffledCards = cardsArray.toSorted(() => 0.5 - Math.random());
   shuffledCards.forEach((card) => {
     const cardElement = createCard(card);
     game.appendChild(cardElement);
@@ -53,6 +54,7 @@ const initializeGame = () => {
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+let matchedPairs = 0;
 
 const flipCard = function () {
   if (lockBoard) return;
@@ -73,6 +75,10 @@ const flipCard = function () {
 const checkForMatch = () => {
   const isMatch = firstCard.dataset.name === secondCard.dataset.name;
   isMatch ? disableCards() : unflipCards();
+  if (isMatch) {
+    pairSound.play();
+    matchedPairs++;
+  }
 };
 
 const disableCards = () => {
