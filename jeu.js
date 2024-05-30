@@ -31,7 +31,8 @@ const createCard = (card) => {
 
   const backFace = document.createElement("img");
   backFace.classList.add("back-face");
-  backFace.src = "https://zupimages.net/up/24/22/0o05.png";
+  backFace.src =
+    "https://i.pinimg.com/564x/d4/e7/e5/d4e7e58055924289bbc0fba9f282c3e1.jpg";
 
   cardElement.appendChild(frontFace);
   cardElement.appendChild(backFace);
