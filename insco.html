@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Inscription et Connexion</title>
+    <link rel="stylesheet" href="./insco.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html" target="_blank">Accueil</a></li>
+            <li><a href="./jeu.html" target="_blank">Jouer</a></li>
+            <li><a href="./profile.html" target="_blank">Profil</a></li>
+            <li><a href="./insco.html" target="_blank">S'inscrire/Se connecter</a></li>
+        </ul>
+    </nav>
+    <div class="main-content">
+        <div class="container" id="signup-container">
+            <h2>Inscription</h2>
+            <form>
+                <div class="form-group">
+                    <label for="signup-username">Nom d'utilisateur</label>
+                    <input type="text" id="signup-username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Mot de passe</label>
+                    <input type="password" id="signup-password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">S'inscrire</button>
+                </div>
+            </form>
+            <div class="form-toggle">
+                <span>Vous avez déjà un compte? <a id="show-login">Connectez-vous</a></span>
+            </div>
+        </div>
+
+        <div class="container" id="login-container" style="display:none;">
+            <h2>Connexion</h2>
+            <form>
+                <div class="form-group">
+                    <label for="login-username">Nom d'utilisateur</label>
+                    <input type="text" id="login-username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Mot de passe</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Se connecter</button>
+                </div>
+            </form>
+            <div class="form-toggle">
+                <span>Pas encore de compte? <a id="show-signup">Inscrivez-vous</a></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="./insco.js"></script>
+</body>
+</html>

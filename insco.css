@@ -1,0 +1,121 @@
+body {
+    /* Ajout de Nunito */
+    font-family: 'Nunito', sans-serif; 
+    /* Gère la position générale du body */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    position: relative;
+    z-index: 0;
+}
+
+body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://zupimages.net/up/24/22/knm9.png") center/cover no-repeat;
+    opacity: 0.5; /* Ajuste la transparence de l'image */
+    z-index: -1; /* Place l'image derrière le contenu */
+}
+
+nav {
+    background-color: #222D55;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(1, 1, 1, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}
+
+.main-content {
+    margin-top: 70px; /* Espace entre la barre de navigation et le corps de la page */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    max-width: 100%;
+}
+
+.container h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background: #4cae4c;
+}
+
+.form-toggle {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-toggle a {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
