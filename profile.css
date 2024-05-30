@@ -19,7 +19,7 @@ body:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("https://zupimages.net/up/24/22/knm9.png") center/cover no-repeat;
+ background: url("https://zupimages.net/up/24/22/knm9.png") center/cover no-repeat; 
   /* Transp img */
   opacity: 0.5;
   /* Img derrière cont princ */
