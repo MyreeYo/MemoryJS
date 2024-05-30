@@ -144,4 +144,14 @@ nav ul li a {
 nav ul li a:hover {
   color: #1abc9c;
 }
-
+/* Modifie la scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #222D55;
+border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #F2ECF8;
+}
