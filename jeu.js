@@ -89,7 +89,7 @@ const checkForMatch = () => {
   isMatch ? disableCards() : unflipCards(); // Si paire, désactive les cartes, sinon retourne les cartes
   if (isMatch) {
     pairSound.play(); // Joue le son de paire
-    pairSound.volume = 0.2;
+    pairSound.volume = 0.2; // Réduit volume son paires
     matchedPairs++; // Incrémente nbr paires trouvées
   }
 };
