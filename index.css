@@ -20,8 +20,8 @@ body:before {
     width: 100%;
     height: 100%;
     background: url("https://zupimages.net/up/24/22/knm9.png") center/cover no-repeat;
-    opacity: 0.5; /* Ajuste la transparence de l'image */
-    z-index: -1; /* Place l'image derrière le contenu */
+    opacity: 0.5; /* Ajuste la transp img */
+    z-index: -1; /* Place img derrière le contenu */
 }
 
 body:after {
@@ -32,9 +32,9 @@ body:after {
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom,  rgba(215, 160, 62, 0.5),  rgba(69, 176, 210, 0.5));
-    z-index: -1; /* Place le gradient derrière le contenu mais devant l'image */
+    z-index: -1; /* Place gradient derrière cont mais devant l'img */
 }
-/* Conteneur du titre 1 et de l'image à droite */
+/* Conteneur du titre 1 et de l'img à droite */
 .header-container {
     display: flex;
     align-items: center;
@@ -47,12 +47,12 @@ h1 {
     text-decoration: underline;
     text-shadow: 2px 2px #F2ECF8;
     color: #27254C;
-    margin-right: 10px; /* Met un entre le titre et l'image */
+    margin-right: 10px; /* Met un esp ent titre et img */
 }
 
-/* Image à droite */
+/* Img à droite */
 .header-image {
-    width: 150px; /* Modifie la taille de l'image */
+    width: 150px; /* Modifie la taille de img */
     height: auto;
     border: none;
 }
