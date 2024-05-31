@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         (user) => user.username === username || user.email === email
       );
       if (userExists) {
-        alert("Username or email already exists!");
+        alert("Pseudo ou email déjà existant !");
         return;
       }
 
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       localStorage.setItem("currentUser", JSON.stringify(newUser));
 
       // Redirige vers la page d'accueil
-      window.location.href = "homepage.html";
+      window.location.href = "./index.html";
     });
 
   // Ajoute EventListener pour soumettre formulaire co
@@ -112,9 +112,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         // Enregistre utilisateur dans localStorage et co auto
         localStorage.setItem("currentUser", JSON.stringify(currentUser));
         // Redirige page d'accueil
-        window.location.href = "homepage.html";
+        window.location.href = "./index.html";
       } else {
-        alert("Invalid username or password!");
+        alert("Pseudo ou mot de passe invalide !");
       }
     });
 });
