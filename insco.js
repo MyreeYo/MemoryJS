@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       localStorage.setItem("currentUser", JSON.stringify(newUser));
 
       // Redirige vers la page d'accueil
-      window.location.href = "./index.html";
+      window.location.href = "./profile.html";
     });
 
   // Ajoute EventListener pour soumettre formulaire co
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         // Enregistre utilisateur dans localStorage et co auto
         localStorage.setItem("currentUser", JSON.stringify(currentUser));
         // Redirige page d'accueil
-        window.location.href = "./index.html";
+        window.location.href = "./profile.html";
       } else {
         alert("Pseudo ou mot de passe invalide !");
       }
